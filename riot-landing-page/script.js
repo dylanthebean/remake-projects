@@ -1,4 +1,3 @@
-// Grabbing the target elements from the HTML File
 const imgs = document.querySelectorAll(".footer-content__gallery-card");
 const gallery = document.querySelector(".footer-content__gallery");
 const numberOfImgs = document.querySelectorAll(
@@ -13,7 +12,7 @@ let isDown = false;
 let startX;
 let scrollLeft;
 
-// Getting the width of our images
+// Getting the width of images
 const imgWidth = imgs[0].getBoundingClientRect().width;
 
 prevButton.addEventListener("click", (e) => {
