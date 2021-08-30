@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Yeseva+One&display=swap");
+
+/* font-family: 'Caveat', cursive;
+font-family: 'Public Sans', sans-serif; */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #010001;
+  color: #ffffff;
+}
+
+h1 {
+  font-size: calc(8rem + 1vw);
+  text-align: left;
+  font-family: "Public Sans", sans-serif;
+  line-height: 0.9;
+  margin: 1.25rem 0;
+}
+
+h1 span {
+  color: #6072d9;
+}
+
+h2 {
+  font-size: calc(2rem + 1vw);
+  font-family: "Caveat", cursive;
+}
+
+.scroll-more {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  transform: translateX(-10%);
+}
+
+.scroll-more h2 {
+  margin-right: 1rem;
+}
+
+svg {
+  align-self: flex-end;
+}
+
+a {
+  color: #6072d9;
+  text-decoration: none;
+}
+
+.project-container {
+  display: flex;
+  margin: 1.5rem 7.5rem 0rem;
+  flex-wrap: wrap;
+  gap: 4rem 8rem;
+}
+
+.project-card {
+  border: solid #1e2655 2px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.project-card div:first-child {
+  width: 29rem;
+  height: 20rem;
+}
+
+.project-card img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.links {
+  display: flex;
+  border-top: solid #1e2655 2px;
+  justify-content: space-evenly;
+  font-size: 1.125rem;
+}
+
+.site {
+  width: 50%;
+  transition: background-color 0.3s ease-in-out;
+  padding: 1.5rem 4rem;
+}
+.site:hover {
+  background-color: #ffffff;
+}
+
+.design {
+  width: 50%;
+  transition: background-color 0.3s ease-in-out;
+  padding: 1.5rem 3rem;
+}
+.design:hover {
+  background-color: #ffffff;
+}
+
+.links svg {
+  color: #6072d9;
+  transform: translate(2px, 1px);
+}
+
+.links a:first-child {
+  border-right: solid #1e2655 2px;
+}
