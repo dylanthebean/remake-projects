@@ -12,14 +12,16 @@ font-family: 'Public Sans', sans-serif; */
 body {
   background-color: #010001;
   color: #ffffff;
+  /* overflow: hidden; */
 }
 
 h1 {
-  font-size: calc(8rem + 1vw);
+  /* font-size: calc(8rem + 1vw); */
+  font-size: 10rem;
   text-align: left;
   font-family: "Public Sans", sans-serif;
   line-height: 0.9;
-  margin: 1.25rem 0;
+  margin: 1.25rem;
 }
 
 h1 span {
@@ -27,7 +29,8 @@ h1 span {
 }
 
 h2 {
-  font-size: calc(2rem + 1vw);
+  /* font-size: calc(2rem + 1vw); */
+  font-size: 3rem;
   font-family: "Caveat", cursive;
 }
 
@@ -108,4 +111,101 @@ a {
 
 .links a:first-child {
   border-right: solid #1e2655 2px;
+}
+
+/* waves */
+
+.waves {
+  overflow: hidden;
+  position: absolute;
+  bottom: -2%;
+  z-index: -1;
+}
+
+.wave1,
+.wave2 {
+  position: fixed;
+  bottom: -8%;
+}
+
+.wave1 {
+  animation: animLeft 30s infinite alternate;
+}
+.wave2 {
+  animation: animRight 30s infinite alternate;
+}
+
+.top-circle {
+  position: absolute;
+  margin-top: -2rem;
+  top: 0;
+  left: -2rem;
+  /* opacity: 0.8; */
+  backdrop-filter: blur(3px);
+}
+
+@keyframes animLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes animRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}
+
+.top-circle {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+@media screen and (max-width: 1600px) {
+  h1 {
+    font-size: 8rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 1250px) {
+  h1 {
+    font-size: 6rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 955px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  .project-container {
+    margin: 1.5rem 0.5rem 0rem;
+    gap: 2.5rem 8rem;
+  }
 }
