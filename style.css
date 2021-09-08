@@ -135,14 +135,15 @@ a {
   animation: animRight 30s infinite alternate;
 }
 
-.top-circle {
+/* .top-circle {
   position: absolute;
   margin-top: -2rem;
-  top: 0;
+  top: -1rem;
   left: -2rem;
-  /* opacity: 0.8; */
+  opacity: 0.8;
+  z-index: -1;
   backdrop-filter: blur(3px);
-}
+} */
 
 @keyframes animLeft {
   0% {
@@ -160,12 +161,6 @@ a {
   100% {
     transform: translateX(50%);
   }
-}
-
-.top-circle {
-  position: absolute;
-  top: 0;
-  z-index: -1;
 }
 
 @media screen and (max-width: 1600px) {
